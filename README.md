@@ -1,4 +1,4 @@
-# Scraping Social Media Photos Posted in Kenya and Elsewhere toDetect and Analyze Food Types
+# Scraping Social Media Photos Posted in Kenya and Elsewhere to Detect and Analyze Food Types
 
 ## Kenyan food
 
