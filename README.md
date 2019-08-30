@@ -1,20 +1,16 @@
-# Kenyan-Food
+# Scraping Social Media Photos Posted in Kenya and Elsewhere toDetect and Analyze Food Types
 
-intro about Kenyan food
-
-
-Images from our paper
+## Kenyan food
 
 ![Kenya104K Image Samples](img/kenya104.png)
 
-link to dataset in Google Drive
 
 KenyanFood13 dataset: https://drive.google.com/open?id=1CHnTy4XqGowT2chCBBxZ8rdYxMC1bwTc
 
 Kenyan104K dataset: https://drive.google.com/open?id=1_ZA3bXnRnGIq-8yBtCXNB8MlBXjWMGKA
 
-credits
 
-authors
+## Credits/Authors
+Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit Betke
 
 
