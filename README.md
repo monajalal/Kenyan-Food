@@ -7,14 +7,19 @@ Management. In conjunction with the 27th ACM International Conference on Multime
 (ACMMMM 2019) Nice, France, October 21, 2019. 10 pages.
 
 
-## Kenyan food
+## Kenyan food/non food dataset
 
 ![Kenya104K Image Samples](img/kenya104.png)
 
 
+Kenyan104K dataset: https://drive.google.com/open?id=1_ZA3bXnRnGIq-8yBtCXNB8MlBXjWMGKA
+
+## Kenyan Food Type Dataset (KenyanFood13)
+![KenyanFood13 Image Samples](img/KenyanFood13.png)
+
 KenyanFood13 dataset: https://drive.google.com/open?id=1CHnTy4XqGowT2chCBBxZ8rdYxMC1bwTc
 
-Kenyan104K dataset: https://drive.google.com/open?id=1_ZA3bXnRnGIq-8yBtCXNB8MlBXjWMGKA
+
 
 Link to ArXiv paper: https://arxiv.org/abs/1909.00134 
 
