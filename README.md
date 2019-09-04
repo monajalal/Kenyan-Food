@@ -16,6 +16,8 @@ KenyanFood13 dataset: https://drive.google.com/open?id=1CHnTy4XqGowT2chCBBxZ8rdY
 
 Kenyan104K dataset: https://drive.google.com/open?id=1_ZA3bXnRnGIq-8yBtCXNB8MlBXjWMGKA
 
+Link to ArXiv paper: https://arxiv.org/abs/1909.00134 
+
 
 ## Credits/Authors
 Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit Betke
