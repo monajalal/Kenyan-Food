@@ -24,6 +24,13 @@ KenyanFood13 dataset: https://drive.google.com/open?id=1CHnTy4XqGowT2chCBBxZ8rdY
 Link to ArXiv paper: https://arxiv.org/abs/1909.00134 
 
 
+## Funding
+This research was partially funded by the following NSF Awards:
+
+- [NSF Award #1838193](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838193&HistoricalAwards=false) BIGDATA: IA: Multiplatform, Multilingual, and Multimodal Tools for Analyzing Public Communication in over 100 Languages
+
+- Hariri Institute for Computing and Computational Science & Engineering at Boston University
+
 ## Credits/Authors
 Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit Betke
 
