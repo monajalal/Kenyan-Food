@@ -25,7 +25,7 @@ Link to ArXiv paper: https://arxiv.org/abs/1909.00134
 
 
 ## Funding
-This research was partially funded by the following NSF Awards:
+This research was partially funded by the following awards:
 
 - [NSF Award #1838193](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1838193&HistoricalAwards=false) BIGDATA: IA: Multiplatform, Multilingual, and Multimodal Tools for Analyzing Public Communication in over 100 Languages
 
