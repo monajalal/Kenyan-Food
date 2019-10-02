@@ -20,4 +20,8 @@
 	for every file saving Instagram Position ID:
 	
 		4) put the name of the file containing Instagram Position ID at the line 19 of the search_by_location.php file to specify the location to scrape and run: php search_by_location.php
+		
+		
+
+We are using the following Instagram API: https://github.com/mgp25/Instagram-API
 
