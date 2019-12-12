@@ -34,6 +34,9 @@ This research was partially funded by the following awards:
 ## Credits/Authors
 Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit Betke
 
+## Acknowledgement
+We are grateful to [Shuai Wei](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwijteWTqK_mAhVwkeAKHZdqB84QFjAAegQIARAB&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fshuai-wei-3b75322a&usg=AOvVaw1-qlowbvWpZBuH40L7Vkrt) for extensive support on getting to run our code work on SCC as well as helping us with various troubleshooting for both our PHP-based scraping and DNN codes. Shuai can be reached at shwei@bu.edu
+
 
 ## TODO
 
