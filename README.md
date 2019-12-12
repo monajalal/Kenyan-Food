@@ -35,3 +35,12 @@ This research was partially funded by the following awards:
 Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit Betke
 
 
+## TODO
+
+- [ ] Adding the 5 fold cross-validation folders for Kenyan food/non-food classifier as well as Kenyan Food Type Recognizer in Google Drive
+
+- [ ] Adding documentation how to run the scraping script with a minimal example for both hashtag-based as well as location-based scenarios.
+
+- [ ] Adding documentation for running the Kenyan Food/Non-Food Classifier as well as Kenyan Food Type Recognizer both in Shared Cluster Center (SCC@BU) as well as on a Deep Learning station.
+
+
