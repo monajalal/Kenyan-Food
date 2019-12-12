@@ -43,4 +43,6 @@ Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit
 
 - [ ] Adding documentation for running the Kenyan Food/Non-Food Classifier as well as Kenyan Food Type Recognizer both in Shared Cluster Center (SCC@BU) as well as on a Deep Learning station.
 
+- [ ] Adding a requirement.txt that shows all the necessary packages for this project.
+
 
