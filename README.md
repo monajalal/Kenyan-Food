@@ -1,7 +1,7 @@
 # Scraping Social Media Photos Posted in Kenya and Elsewhere to Detect and Analyze Food Types
 
-M. Jalal*, K. Wang*, J. Sankara, Y. Zheng, E. O. Nsoesie, and M. Betke. Scraping Social
-Media Photos Posted in Kenya and Elsewhere to Detect and Analyze Food Types. To be
+M. Jalal*, K. Wang*, J. Sankara, Y. Zheng, E. O. Nsoesie, and M. Betke. [Scraping Social
+Media Photos Posted in Kenya and Elsewhere to Detect and Analyze Food Types](https://dl.acm.org/doi/10.1145/3347448.3357170). 
 published in MADiMA 2019, the 5th International Workshop on Multimedia Assisted Dietary
 Management. In conjunction with the 27th ACM International Conference on Multimedia
 (ACMMMM 2019) Nice, France, October 21, 2019. 10 pages.
