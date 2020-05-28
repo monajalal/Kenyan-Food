@@ -1,7 +1,3 @@
-# code written by Jiwon (Tanner) Park and Tushar Sharma
-
-#downloads the images from a JSON file that includes many Instagram JSON posts into food and non-food folders
-
 import json
 import urllib
 import requests
@@ -10,6 +6,8 @@ from json import JSONDecoder
 from functools import partial
 import sys
 import os
+import itertools
+from os import path
 
 
 def json_parse(fileobj, decoder=JSONDecoder(), buffersize=2048):
@@ -27,41 +25,80 @@ def json_parse(fileobj, decoder=JSONDecoder(), buffersize=2048):
 
 
 def download_image(p, fn, url, i):
-    resp = requests.get(url, stream=True)
-    local_file = open(p + filename + '.jpg', 'wb')
-    resp.raw.decode_content = True
-    shutil.copyfileobj(resp.raw, local_file)
-    local_file.close()
-    del resp
+    global total_downloads
+    try:
+        print("Downloading = " + str(total_downloads) + "\n url = " + url + "\n")
+        resp = requests.get(url, stream=True)
+        local_file = open(p + filename + '.jpg', 'wb')
+        resp.raw.decode_content = True
+        shutil.copyfileobj(resp.raw, local_file)
+        local_file.close()
+        total_downloads +=1
+        print("Download success!")
+        del resp
+    except requests.exceptions.RequestException as e:
+        return
+
+def download_video(p, fn, url, i):
+    global total_downloads
+    if url == None or url == "":
+        return
+    try:
+        print("Downloading = " + str(total_downloads) + "\n url = " + url + "\n")
+        resp = requests.get(url, stream=True)
+        local_file = open(p + filename + '.mp4', 'wb')
+        resp.raw.decode_content = True
+        shutil.copyfileobj(resp.raw, local_file)
+        local_file.close()
+        total_downloads +=1
+        print("Download success!")
+        del resp
+    except requests.exceptions.RequestException as e:
+        return
 
 
+skip = 0
+if(len(sys.argv) > 2 and (sys.argv[2] is not None)):
+    skip = int(sys.argv[2])
+total_downloads = skip
+print(str(skip))
 current_dir = str(os.getcwd()) + '/'
 foodpath = current_dir + 'img_' + (str(sys.argv[1])[25:-5]) + '/food/'
 nonfoodpath = current_dir + 'img_' + (str(sys.argv[1])[25:-5]) + '/nonfood/'
+videopath = current_dir + 'video_/'
 
-try:
-    os.mkdir(foodpath[:-5])
-except OSError:
-    print("Creation of the directory failed")
-else:
-    print("Successfully created the directory")
+if not path.isdir("img_") :
+    try:
+        os.mkdir(foodpath[:-5])
+    except OSError:
+        print("Creation of the directory failed")
+    else:
+        print("Successfully created the directory")
+    try:
+        os.mkdir(foodpath[:-1])
+    except OSError:
+        print("Creation of the directory failed")
+    else:
+        print("Successfully created the directory")
+    try:
+        os.mkdir(nonfoodpath[:-1])
+    except OSError:
+        print("Creation of the directory failed")
+    else:
+        print("Successfully created the directory")
+    try:
+        os.mkdir(videopath[:-1])
+    except OSError:
+        print("Creation of video directory failed")
+    else:
+        print("Successfully created the video directory")
+    
 
-try:
-    os.mkdir(foodpath[:-1])
-except OSError:
-    print("Creation of the directory failed")
-else:
-    print("Successfully created the directory")
-try:
-    os.mkdir(nonfoodpath[:-1])
-except OSError:
-    print("Creation of the directory failed")
-else:
-    print("Successfully created the directory")
+
 
 Wdata = []
 with open(str(sys.argv[1])) as f:
-    for line in f:
+    for line in itertools.islice(f, skip, None):
         ##print(len(Wdata))
         ##print(line)
         try:
@@ -72,11 +109,15 @@ with open(str(sys.argv[1])) as f:
     i = 0
     for data in Wdata:
         image_url = data["output_content"]["graphql"]["shortcode_media"]["display_url"]
+        if data["output_content"]["graphql"]["shortcode_media"]["is_video"] == True:
+            video_url = data["output_content"]["graphql"]["shortcode_media"]["video_url"]
         path = nonfoodpath
         filename = data["output_content"]["graphql"]["shortcode_media"]["id"]
         if ("edge_sidecar_to_children" in data["output_content"]["graphql"]["shortcode_media"]):
             for child in data["output_content"]["graphql"]["shortcode_media"]["edge_sidecar_to_children"]["edges"]:
                 image_url = child["node"]["display_url"]
+                if child["node"]["is_video"] == True:
+                    video_url = child["node"]["video_url"]
                 filename = child["node"]["id"]
 
                 if ("accessibility_caption" in child["node"]):
@@ -95,8 +136,10 @@ with open(str(sys.argv[1])) as f:
 
                 if (child["node"]["is_video"] != True):
                     i += 1
-                    print(i)
+                    # print(i)
                     download_image(path, filename, image_url, i)
+                else:
+                    download_video(videopath, filename, video_url, i)
         else:
             # if (data["graphql"]["shortcode_media"]["is_video"] == 'true'):
 
@@ -116,5 +159,7 @@ with open(str(sys.argv[1])) as f:
 
             if (data["output_content"]["graphql"]["shortcode_media"]["is_video"] != True):
                 i += 1
-                print(i)
+                # print(i)
                 download_image(path, filename, image_url, i)
+            else:
+                download_video(videopath, filename, video_url, i)
