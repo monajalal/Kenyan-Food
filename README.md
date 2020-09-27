@@ -36,6 +36,7 @@ Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit
 
 ## BibTeX for Citing
 
+```
 @inproceedings{JalalWaJeZhNsBe19,
   title={Scraping social media photos posted in Kenya and elsewhere to detect and analyze food types},
   author={Jalal, Mona and Wang, Kaihong and Jefferson, Sankara and Zheng, Yi and Nsoesie, Elaine O and Betke, Margrit},
@@ -43,6 +44,7 @@ Kaihong Wang*, Mona Jalal*, Jefferson Sankara, Yi Zheng, Elaine Nsoesie, Margrit
   pages={50--59},
   year={2019}
 }
+```
 
 
 ## Acknowledgement
