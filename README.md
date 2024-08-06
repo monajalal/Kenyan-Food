@@ -12,12 +12,12 @@ Management. In conjunction with the 27th ACM International Conference on Multime
 ![Kenya104K Image Samples](img/kenya104.png)
 
 
-Kenyan104K dataset: https://drive.google.com/open?id=1_ZA3bXnRnGIq-8yBtCXNB8MlBXjWMGKA
+Kenyan104K dataset: https://www.dropbox.com/scl/fi/ie3ddguh06t0uxkqlmfln/KFD.zip?rlkey=vt4xzclx5y1im7433b9vqlv9r&dl=0
 
 ## Kenyan Food Type Dataset (KenyanFood13)
 ![KenyanFood13 Image Samples](img/KenyanFood13.png)
 
-KenyanFood13 dataset: https://drive.google.com/open?id=1CHnTy4XqGowT2chCBBxZ8rdYxMC1bwTc
+KenyanFood13 dataset: https://www.dropbox.com/scl/fi/hk1llnnv6bpjw153epfxo/Food13.zip?rlkey=o7iq83g4g0xjeif45ibxd9kkb&dl=0
 
 
 
